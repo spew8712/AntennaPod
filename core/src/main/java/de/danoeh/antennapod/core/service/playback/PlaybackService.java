@@ -1282,7 +1282,7 @@ public class PlaybackService extends MediaBrowserServiceCompat {
         builder.putString(MediaMetadataCompat.METADATA_KEY_DISPLAY_TITLE, p.getEpisodeTitle());
         builder.putString(MediaMetadataCompat.METADATA_KEY_DISPLAY_SUBTITLE, p.getFeedTitle());
 
-
+/*
         if (notificationBuilder.isIconCached()) {
             builder.putBitmap(MediaMetadataCompat.METADATA_KEY_ART, notificationBuilder.getCachedIcon());
         } else {
@@ -1302,7 +1302,7 @@ public class PlaybackService extends MediaBrowserServiceCompat {
                 builder.putString(MediaMetadataCompat.METADATA_KEY_DISPLAY_ICON_URI, iconUri);
             }
         }
-
+*/
         if (stateManager.hasReceivedValidStartCommand()) {
             mediaSession.setSessionActivity(PendingIntent.getActivity(this, R.id.pending_intent_player_activity,
                     PlaybackService.getPlayerActivityIntent(this), PendingIntent.FLAG_UPDATE_CURRENT
