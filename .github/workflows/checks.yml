@@ -101,8 +101,8 @@ jobs:
       - uses: actions/upload-artifact@v3
         if: matrix.upload-artifact == true
         with:
-          name: app-play-debug.apk
-          path: app/build/outputs/apk/play/debug/app-play-debug.apk
+          name: app-free-release.apk
+          path: app/build/outputs/apk/free/release/app-free-release.apk
 
   emulator-test:
     name: "Emulator Test"
